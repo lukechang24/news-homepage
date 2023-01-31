@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="styles.css" /> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,7 +19,7 @@
   </style>
 </head>
 <body>
-
+<!--
   Home
   New
   Popular
@@ -51,7 +55,34 @@
   03
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities.
-  
+-->
+  <header class="header">
+    <img src="./assets/images/logo.svg">
+    <nav class="nav">
+      <a class="nav__link">Home</a>
+      <a class="nav__link">New</a>
+      <a class="nav__link">Popular</a>
+      <a class="nav__link">Trending</a>
+      <a class="nav__link">Categories</a>
+    </nav>
+  </header>
+  <main class="grid">
+    <section class="main">
+      <img src="./assets/images/image-web-3-desktop.jpg">
+      <div class="main-wrapper">
+        <h3 class="main__title">The Bright Future of Web 3.0?</h3>
+        <div class="description-wrapper">
+          <p class="description">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button class="read-more">READ MORE</button>
+        </div>
+      </div>
+    </section>
+    <aside class="new">
+      <h4 class="new__title">New</h4>
+    </aside>
+    <section class="ranking"></section>
+    <section></section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
