@@ -14,7 +14,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { position: absolute; bottom: 25px; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -59,11 +59,11 @@
   <header class="header">
     <img src="./assets/images/logo.svg">
     <nav class="nav">
-      <a class="nav__link">Home</a>
-      <a class="nav__link">New</a>
-      <a class="nav__link">Popular</a>
-      <a class="nav__link">Trending</a>
-      <a class="nav__link">Categories</a>
+      <a class="nav__link" href="">Home</a>
+      <a class="nav__link" href="">New</a>
+      <a class="nav__link" href="">Popular</a>
+      <a class="nav__link" href="">Trending</a>
+      <a class="nav__link" href="">Categories</a>
     </nav>
   </header>
   <main class="grid">
@@ -78,14 +78,58 @@
       </div>
     </section>
     <aside class="new">
-      <h4 class="new__title">New</h4>
+      <h4 class="new__tag">New</h4>
+      <div class="new__wrapper">
+        <h5 class="new__title"><a href="">Hydrogen VS Electric Cars</a></h5>
+        <p class="new__description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <hr class="line-break">
+      <div class="new__wrapper">
+        <h5 class="new__title"><a href="">The Downsides of AI Artistry</a></h5>
+        <p class="new__description">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <hr class="line-break">
+      <div class="new__wrapper">
+        <h5 class="new__title"><a href="">Is VC Funding Drying Up?</a></h5>
+        <p class="new__description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
     </aside>
-    <section class="ranking"></section>
-    <section></section>
+    <section class="ranking">
+      <div class="ranking-wrapper">
+        <div class="image-container">
+          <img class="ranking__image" src="./assets/images/image-retro-pcs.jpg">
+        </div>
+        <section class="ranking-content-wrapper">
+          <h4 class="ranking__number">01</h4>
+          <h5 class="ranking__title">Reviving Retro PCs</h5>
+          <p class="ranking__description">What happens when old PCs are given modern upgrades?</p>
+        </section>
+      </div>
+      <div class="ranking-wrapper">
+        <div class="image-container">
+          <img class="ranking__image" src="./assets/images/image-top-laptops.jpg">
+        </div>
+        <section class="ranking-content-wrapper">
+          <h4 class="ranking__number">02</h4>
+          <h5 class="ranking__title">Top 10 Laptops of 2022</h5>
+          <p class="ranking__description">Our best picks for various needs and budgets.</p>
+        </section>
+      </div>
+      <div class="ranking-wrapper">
+        <div class="image-container">
+          <img class="ranking__image" src="./assets/images/image-gaming-growth.jpg">
+        </div>
+        <section class="ranking-content-wrapper">
+          <h4 class="ranking__number">03</h4>
+          <h5 class="ranking__title">The Growth of Gaming</h5>
+          <p class="ranking__description">How the pandemic has sparked fresh opportunities.</p>
+        </section>
+      </div>
+    </section>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/lukechang24" target="_blank">Luke Chang</a>.
   </div>
 </body>
 </html>
